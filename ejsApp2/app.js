@@ -57,6 +57,19 @@ app.get('/error', function(req, res) {
     });
 });
 
+app.get('/movies', function(req, res) {
+    res.render('pages/movies');
+});
+
+app.get('/tvshows', function(req, res) {
+    res.render('pages/tvshows', {
+        tvshow1: "Breaking Bad",
+        tvshow2: "The Walking Dead",
+        tvshow3: "The Office",
+        tvshow4: "Friends"
+    });
+});
+
 
 
 app.listen(3000);  // not setting port number in www.bin, simple to do here
