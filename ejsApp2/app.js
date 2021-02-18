@@ -59,6 +59,10 @@ app.get('/error', function(req, res) {
 
 app.get('/movies', function(req, res) {
     res.render('pages/movies');
+        movie1: "After",
+        movie2: "American Murder",
+        movie3: "Labor Pains",
+        movie4: "It",
 });
 
 app.get('/tvshows', function(req, res) {
