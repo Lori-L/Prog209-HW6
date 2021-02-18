@@ -1,16 +1,28 @@
-<html>
-<title>
-Movie List 
-</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
 
-<body>
-1. Now you See Me
-2. Meg
-3. Lincoln Lawyer
-4. American Murder
-5. After
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+  <div class="jumbotron">
+      <h3>My favorite Movies</h3>
+      <ul>
+          <li><%= movie1 %></li>
+          <li><%= movie2 %></li>
+          <li><%= movie3 %></li>
+          <li><%= movie4 %></li>
+      </ul>
+  </div>
+</main>
+
+<footer>
+  <% include ../partials/footer %>
+</footer>
+
 </body>
-
-
 </html>
-
